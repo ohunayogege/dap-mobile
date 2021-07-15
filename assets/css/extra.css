@@ -4,7 +4,7 @@
 
 .dineuron-menu{width: 100%; height: 100%; opacity: 0; visibility: hidden;}
 .nav-open .dineuron-menu {opacity: 1; visibility: visible; background: #F3F3F3; }
-.dineuron-menu .nav li a{color:#000; font-size: 18px; font-weight:600; line-height: 1.25em; }
+.dineuron-menu .nav li a{color:#000; font-size: 14px; font-weight:600; line-height: 1.25em; }
 .dineuron-menu .nav li{
     opacity: 0;
     -webkit-transform: translateY(-40px);
@@ -20,7 +20,22 @@
     transform: translateY(0px);
     -webkit-transition: -webkit-transform .2s,opacity .2s;
     transition: transform .2s,opacity .2s;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+#sub-learn {
+    list-style: none;
+}
+.list-none {
+    display: none; /* Hidden by default */
+    position: relative; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .dineuron-menu .nav li.delay-1{-webkit-transition-delay:0.1s; -moz-transition-delay:0.1s; -ms-transition-delay:0.1s; -o-transition-delay:0.1s; transition-delay:0.1s; }
 .dineuron-menu .nav li.delay-2{-webkit-transition-delay:0.2s; -moz-transition-delay:0.2s; -ms-transition-delay:0.2s; -o-transition-delay:0.2s; transition-delay:0.2s; }
@@ -52,9 +67,18 @@
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #F35903 !important;
     border: none;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
-    font-size: 18px;
+    font-size: 14px !important;
+    color: #F3F3F3 !important;
+}
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited {
+    background-color: #FFF !important;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px !important;
+    color: #F35903 !important;
 }
 
 option { 
@@ -63,3 +87,24 @@ option {
     color: #F35903;
     font-size: 12px; 
 }
+.carousel-indicators {
+    position: absolute;
+    right: 0 inherit;
+    bottom: 0;
+    left: 10%;
+    top: -40px !important;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 50% !important;
+    list-style: none;
+}
+.carousel-indicators > button {
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #F35903 !important;
+  }

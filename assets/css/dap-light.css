@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     line-height: 1.25em;
+    
 }
 a:link {
     text-decoration: none;
@@ -13,8 +14,22 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
-.behind-text-container {
+.slide-banner {
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 5px;
+    position: absolute;
+    top: 5%;
+    margin-top: 10%;
+}
+.slide-banner img{
+    width: 80%;
+}
+.image-banner {
     position: absolute;
     width: 100%;
     height: 31px;
@@ -22,33 +37,15 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.behind-text-container span {
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 33.8px;
-    line-height: 40px;
-    text-align: center;
-
-    color: rgba(125, 125, 125, 0.28);
-}
-.ui-screen {
-    position: absolute;
-    width: 100%;
-    height: 138px;
-    margin-top: 20%;
-}
-.ui-screen img {
-    width: 60%;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+.image-banner img{
+    width: 80%;
 }
 .ui-screen-text {
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 115px;
-    margin-top: 58%;
+    padding: 0px 10px;
+    top: 45%;
 }
 .ui-screen-text p {
     font-family: SF Pro Text;
@@ -61,15 +58,14 @@ body {
     padding: 10px 16px;
 }
 .download-btn {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 98%;
     height: 115px;
-    margin-top: 80%;
     align-items: center;
     flex-direction: row;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 20%;
+    padding: 10px 15px;
+    top: 60%;
 }
 
 footer {
