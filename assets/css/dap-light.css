@@ -150,3 +150,22 @@ a.signup-text {
     margin-top: 5%;
     margin-bottom: 10%;
 }
+
+/* .user-card {
+    background-image: url("../img/card-bg.png");
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #F35903;
+} */
+.user-card {
+    border-radius: 40px;
+    padding: 10px;
+    width: 100%;
+    background-image: url(../img/card-bg.png);
+    background-color: #F35903;
+  }
+  
+.card {
+    background-color: #F35903 !important;
+}
